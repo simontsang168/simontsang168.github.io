@@ -32,12 +32,11 @@ class Counter extends React.Component {
 
     render(){
         return (<div>
-            <button className="btn" children="-" onClick={this.minus.bind(this)} />
-
-    <span className="badge badge-primary" children={this.state.count} />
-    <button className="btn" children="+1" onClick={this.add.bind(this)} />
-    <button className="btn" children="+2" onClick={this.add.bind(this)} data-increment="2" />
-            <button className="btn" children="+3" onClick={this.add.bind(this)} data-increment="3" />
+            <button className="btn btn-lg" children="-" onClick={this.minus.bind(this)} />
+            <button className="btn btn-lg" children={this.state.count} disabled={true} />
+            <button className="btn btn-lg" children="+1" onClick={this.add.bind(this)} />
+            <button className="btn btn-lg" children="+2" onClick={this.add.bind(this)} data-increment="2" />
+            <button className="btn btn-lg" children="+3" onClick={this.add.bind(this)} data-increment="3" />
             </div>);
     }
 }
