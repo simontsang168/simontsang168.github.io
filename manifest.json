@@ -1,0 +1,20 @@
+{
+  "name": "React Counter",
+  "short_name": "Counter",
+  "icons": [{
+        "src": "icon/lowres.png",
+        "sizes": "64x64",
+        "type": "image/webp"
+      }, {
+        "src": "icon/hd_small.png",
+        "sizes": "64x64"
+      }, {
+        "src": "icon/hd_hi.png",
+        "sizes": "128x128",
+        "density": 2
+      }],
+  "scope": "/",
+  "start_url": "/index.html",
+  "display": "fullscreen",
+  "orientation": "portrait"
+}
