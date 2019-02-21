@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+require 'byebug'
+require 'rails'
+
+# new_bookmark = Hash[ ARGV.join(' ').scan(/--?([^=\s]+)(?:=(\S+))?/) ]
+
+json_string = File.read('data/bookmarks.json')
+bookmarks = JSON.parse(json_string)
+
+bookmarks << Hash[ARGV.join(' ').scan(/--?([^=\s]+)(?:=(\S+))?/)]
+
+File.write('data/bookmarks.json', bookmarks.to_json)
+byebug
+
+
+puts ''
