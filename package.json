@@ -31,14 +31,18 @@
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.7.2",
         "bootstrap": "4.3.1",
-        "jquery": "3.3.1",
+        "popper.js": "1.14.7",
+        "jquery": ">=3.4.0",
         "jquery.easing": "^1.4.1",
-        "magnific-popup": "^1.1.0"
+        "magnific-popup": "^1.1.0",
+        "tar": ">=4.4.2"
     },
     "devDependencies": {
-        "browser-sync": "2.26.3",
+        "axios": ">=0.18.1",
+        "browser-sync": "^2.26.7",
         "del": "^3.0.0",
-        "gulp": "4.0.0",
+        "fstream": ">=1.0.12",
+        "gulp": "4.0.2",
         "gulp-autoprefixer": "6.0.0",
         "gulp-clean-css": "4.0.0",
         "gulp-header": "2.0.7",
@@ -46,6 +50,7 @@
         "gulp-rename": "1.4.0",
         "gulp-sass": "4.0.2",
         "gulp-uglify": "3.0.1",
+        "node-sass": "4.12.0",
         "merge-stream": "^1.0.1"
     }
 }

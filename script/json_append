@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+require 'byebug'
+require 'rails'
+
+filenpath = ARGV.first
+
+json_string = File.read(filenpath)
+bookmarks = JSON.parse(json_string)
+
+bookmarks << ARGV.drop(1).join(' ').scan(/--?([^=\s]+)(?:=(\S+))?/).to_json
+
+File.write(filenpath, bookmarks.to_json)
+
+puts "Updated : #{filenpath}"
